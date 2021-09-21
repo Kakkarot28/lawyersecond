@@ -1,0 +1,1202 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200;1,400;1,700&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #1a1c20;
+  color: #f4f4f4;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header .top {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header .top .head {
+  width: 100%;
+  background-color: #cf7500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top .head .num {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top .head .num h2 {
+  font-size: 1.7rem;
+  padding: 0.5em;
+  letter-spacing: 2px;
+  margin-left: 1em;
+  color: #1a1c20;
+  font-family: "Anton", sans-serif;
+  text-shadow: 0 1px 0 silver;
+}
+
+header .top .head .num h2 span {
+  margin-right: 0.7em;
+}
+
+header .top .head .num h2 span ion-icon {
+  font-size: 2.3rem;
+  margin-bottom: -5px;
+}
+
+header .top .head h4 {
+  width: 40%;
+  text-align: right;
+  margin-right: 3.5em;
+  font-size: 1.7rem;
+  color: #1a1c20;
+  letter-spacing: 1px;
+}
+
+header .top nav {
+  width: 100%;
+  background: #1a1c20;
+}
+
+header .top nav .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top nav .navbar .logo {
+  width: 40%;
+}
+
+header .top nav .navbar .logo a h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #f0a500;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 1px;
+}
+
+header .top nav .navbar .nav_items {
+  width: 60%;
+}
+
+header .top nav .navbar .nav_items ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top nav .navbar .nav_items ul li {
+  margin: 0 2em;
+}
+
+header .top nav .navbar .nav_items ul li a {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  color: #f4f4f4;
+  letter-spacing: 1px;
+  border-bottom: 1.5px solid #f0a500;
+  padding-bottom: 0.2em;
+}
+
+header main {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+header main .hero {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header main .hero .hero_left h1 {
+  font-size: 4rem;
+  color: #f0a500;
+  font-family: "IBM Plex Serif", serif;
+  text-transform: capitalize;
+  text-shadow: 0 2px 3px #cf7500;
+  letter-spacing: 1px;
+  margin-bottom: 0.3em;
+}
+
+header main .hero .hero_left p {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  color: #f4f4f4;
+  text-transform: capitalize;
+  line-height: 2.3rem;
+  letter-spacing: 1px;
+  margin-bottom: 2.5em;
+}
+
+header main .hero .hero_left a {
+  font-size: 1.5rem;
+  color: #1a1c20;
+  background: #f4f4f4;
+  border-radius: 25px;
+  padding: 0.5em 1.5em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-box-shadow: -2px 3px 2px #cf7500;
+          box-shadow: -2px 3px 2px #cf7500;
+}
+
+header main .hero .hero_left a span {
+  margin-left: 0.5em;
+}
+
+header main .hero .hero_left a span ion-icon {
+  font-size: 2rem;
+  margin-bottom: -4px;
+}
+
+header main .hero .hero_left a:hover {
+  background: #cf7500;
+  color: #f4f4f4;
+  -webkit-box-shadow: -2px 3px 2px #f4f4f4;
+          box-shadow: -2px 3px 2px #f4f4f4;
+}
+
+header main .hero .hero_right form {
+  width: 350px;
+  padding: 1.7em 1.2em;
+  border: 5px solid #cf7500;
+  border-radius: 5px;
+  background: #f0a500;
+  margin-top: 8em;
+}
+
+header main .hero .hero_right form .common {
+  margin-bottom: 1.2em;
+}
+
+header main .hero .hero_right form .common input {
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 0.5em 0.6em;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  background: #1a1c20;
+  border-bottom: 4px solid #f4f4f4;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  color: #f0a500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+header main .hero .hero_right form textarea {
+  width: 100%;
+  font-size: 1.7rem;
+  height: 100px;
+  padding: 0.3em 0.6em;
+  margin-bottom: 1em;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  background: #1a1c20;
+  border-bottom: 3px solid #f4f4f4;
+  border-radius: 5px;
+  color: #f0a500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+header main .hero .hero_right form button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding: 0.4em;
+  background: #cf7500;
+  color: #f4f4f4;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: -2px 2px 2px #1a1c20;
+  -webkit-box-shadow: 0 3px 2px #1a1c20;
+          box-shadow: 0 3px 2px #1a1c20;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header main .hero .hero_right form button span {
+  margin-left: 0.5em;
+}
+
+header main .hero .hero_right form button span ion-icon {
+  font-size: 2.3rem;
+  margin-bottom: -5px;
+}
+
+header main .hero .hero_right form button:hover {
+  -webkit-box-shadow: 0 2px 2px #f4f4f4;
+          box-shadow: 0 2px 2px #f4f4f4;
+  background: #1a1c20;
+}
+
+.about_us {
+  width: 100%;
+  padding-top: 3em;
+}
+
+.about_us .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about_us .about .about_left {
+  width: 50%;
+  padding-left: 3em;
+  text-align: center;
+}
+
+.about_us .about .about_left h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+}
+
+.about_us .about .about_left h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.about_us .about .about_left p {
+  font-size: 1.7rem;
+  padding-bottom: 0.5em;
+  line-height: 2.8rem;
+}
+
+.about_us .about .about_left a {
+  font-size: 1.5rem;
+  color: #1a1c20;
+  background: #f4f4f4;
+  border-radius: 25px;
+  padding: 0.5em 1.5em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-box-shadow: -2px 3px 2px #cf7500;
+          box-shadow: -2px 3px 2px #cf7500;
+  margin-top: 1.6em;
+  display: inline-block;
+}
+
+.about_us .about .about_left a span {
+  margin-left: 0.5em;
+}
+
+.about_us .about .about_left a span ion-icon {
+  font-size: 2rem;
+  margin-bottom: -4px;
+}
+
+.about_us .about .about_left a:hover {
+  background: #cf7500;
+  color: #f4f4f4;
+  -webkit-box-shadow: -2px 3px 2px #f4f4f4;
+          box-shadow: -2px 3px 2px #f4f4f4;
+}
+
+.about_us .about .about_right {
+  width: 50%;
+  padding-right: 3em;
+}
+
+.choose {
+  width: 100%;
+  padding-bottom: 3em;
+}
+
+.choose .choose_us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+}
+
+.choose .choose_us .left {
+  width: 50%;
+}
+
+.choose .choose_us .right {
+  width: 50%;
+  padding-right: 5em;
+}
+
+.choose .choose_us .right h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+}
+
+.choose .choose_us .right h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.choose .choose_us .right p {
+  font-size: 1.6rem;
+  margin-bottom: 2em;
+  line-height: 2.6rem;
+}
+
+.choose .choose_us .right ul {
+  text-align: left;
+}
+
+.choose .choose_us .right ul li {
+  font-size: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.choose .choose_us .right ul li ion-icon {
+  width: 10%;
+  color: #cf7500;
+  font-size: 2.5rem;
+}
+
+.choose .choose_us .right ul li span {
+  width: 90%;
+}
+
+.services {
+  width: 100%;
+  padding: 3em;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.8))), url("https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background: linear-gradient(black, rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+  color: #f4f4f4;
+  margin-bottom: 2em;
+}
+
+.services h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.services .services_home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services_home ul {
+  margin: 0 3em;
+}
+
+.services .services_home ul li {
+  font-size: 2rem;
+  margin-bottom: 1.3em;
+  text-transform: capitalize;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 1px;
+  color: #f4f4f4;
+  background: #1a1c20;
+  padding: 0.1em 1.5em;
+  padding-bottom: 0.6em;
+  border-radius: 35px;
+  border: 1px solid #cf7500;
+  -webkit-box-shadow: -4px 3px 0 #cf7500;
+          box-shadow: -4px 3px 0 #cf7500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .services_home ul li span {
+  font-size: 2.5rem;
+  margin-right: 0.6em;
+}
+
+.services .services_home ul li span ion-icon {
+  font-size: 3rem;
+  margin-bottom: -7px;
+  color: #cf7500;
+}
+
+.services .services_home ul li:hover {
+  background: #f4f4f4;
+  color: #1a1c20;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.banner {
+  width: 100%;
+  height: 250px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(black)), url("https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), black), url("https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.banner .add {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.banner .add .left_add,
+.banner .add .right_add {
+  width: 40%;
+}
+
+.banner .add .left_add h1,
+.banner .add .right_add h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+}
+
+.banner .add .left_add h1 span,
+.banner .add .right_add h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.banner .add .left_add address,
+.banner .add .right_add address {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  line-height: 2.7rem;
+}
+
+.members {
+  width: 100%;
+  padding: 3em 0;
+}
+
+.members h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.members h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.members .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.members .team article {
+  width: 270px;
+  margin-top: 3.5em;
+  padding: 1em;
+  border: 3px solid #cf7500;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.members .team article img {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px silver;
+          box-shadow: 0 0 5px silver;
+}
+
+.members .team article .text {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f4f4f4;
+  color: #cf7500;
+  text-align: center;
+  padding: 2em;
+  border-radius: 5px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.members .team article .text h2 {
+  font-size: 3.8rem;
+  text-transform: capitalize;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 1px;
+}
+
+.members .team article .text small {
+  font-size: 1.7rem;
+  color: #1a1c20;
+  padding-bottom: 1.5em;
+  display: inline-block;
+}
+
+.members .team article .text p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2.3rem;
+  color: #1a1c20;
+}
+
+.members .team article .text .icons {
+  margin: 5em 0;
+}
+
+.members .team article .text .icons ion-icon {
+  font-size: 2.5rem;
+  margin: 0 0.3em;
+  border: 2.5px solid #cf7500;
+  padding: 0.15em;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.members .team article .text .icons ion-icon:hover {
+  background: #cf7500;
+  color: #f4f4f4;
+}
+
+.members .team article:hover .text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.reviews {
+  width: 100%;
+  padding: 3em 0;
+  background: #cf7500;
+}
+
+.reviews h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.reviews h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.reviews .single_review {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 6em;
+}
+
+.reviews .single_review ion-icon {
+  font-size: 3.5rem;
+  color: #1a1c20;
+}
+
+.reviews .single_review p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 2em;
+  line-height: 2.7rem;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  color: #f4f4f4;
+}
+
+.reviews .single_review img {
+  width: 88px;
+  height: 88px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #f4f4f4;
+  padding: 0.3em;
+}
+
+.reviews .single_review h2 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  margin-top: 0.5em;
+  letter-spacing: 1px;
+  color: #f4f4f4;
+}
+
+.reviews .single_review small {
+  font-size: 1.3rem;
+  font-family: "IBM Plex Serif", serif;
+  text-transform: capitalize;
+  margin-top: 0.3em;
+  color: #1a1c20;
+  letter-spacing: 2px;
+}
+
+.reviews .single_review .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+}
+
+.reviews .single_review .btns ion-icon {
+  margin: 0 0.5em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.reviews .single_review .btns ion-icon:hover {
+  color: #f4f4f4;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 5em;
+  background: #f4f4f4;
+}
+
+footer p {
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  font-family: "IBM Plex Serif", serif;
+  color: #1a1c20;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+footer ion-icon {
+  font-size: 7rem;
+  color: #cf7500;
+}
+
+.sub_footer {
+  background: #cf7500;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.sub_footer p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.about_top {
+  width: 100%;
+  position: relative;
+}
+
+.about_top .top {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-box-shadow: 0 2px 8px rgba(192, 192, 192, 0.568);
+          box-shadow: 0 2px 8px rgba(192, 192, 192, 0.568);
+}
+
+.about_top .top .head {
+  width: 100%;
+  background-color: #cf7500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_top .top .head .num {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_top .top .head .num h2 {
+  font-size: 1.8rem;
+  padding: 0.5em;
+  letter-spacing: 2px;
+  margin-left: 1em;
+  color: #1a1c20;
+  font-family: "Anton", sans-serif;
+  text-shadow: 0 1px 0 silver;
+}
+
+.about_top .top .head .num h2 span {
+  margin-right: 0.7em;
+}
+
+.about_top .top .head .num h2 span ion-icon {
+  font-size: 2.3rem;
+  margin-bottom: -5px;
+}
+
+.about_top .top .head h4 {
+  width: 40%;
+  text-align: right;
+  margin-right: 3.5em;
+  font-size: 1.7rem;
+  color: #1a1c20;
+  letter-spacing: 1px;
+}
+
+.about_top .top nav {
+  width: 100%;
+  background: #1a1c20;
+}
+
+.about_top .top nav .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_top .top nav .navbar .logo {
+  width: 40%;
+}
+
+.about_top .top nav .navbar .logo a h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #f0a500;
+  font-family: "IBM Plex Serif", serif;
+  letter-spacing: 1px;
+}
+
+.about_top .top nav .navbar .nav_items {
+  width: 60%;
+}
+
+.about_top .top nav .navbar .nav_items ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_top .top nav .navbar .nav_items ul li {
+  margin: 0 2em;
+}
+
+.about_top .top nav .navbar .nav_items ul li a {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  color: #f4f4f4;
+  letter-spacing: 1px;
+  border-bottom: 1.5px solid #f0a500;
+  padding-bottom: 0.2em;
+}
+
+.me {
+  width: 100%;
+  padding-top: 15em;
+}
+
+.me .about_me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.me .about_me .me_left {
+  width: 50%;
+  padding-right: 3em;
+}
+
+.me .about_me .me_left h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+}
+
+.me .about_me .me_left h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.me .about_me .me_left p {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  text-align: justify;
+  line-height: 2.4rem;
+}
+
+.me .about_me .me_right {
+  width: 50%;
+  padding-left: 10em;
+  padding-right: 7em;
+}
+
+.map_one {
+  padding-top: 15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map_one ion-icon {
+  margin-bottom: -5px;
+}
+
+.map_one .map_one_left {
+  width: 50%;
+  padding-right: 5em;
+}
+
+.map_one .map_one_left h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+}
+
+.map_one .map_one_left h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.map_one .map_one_left address {
+  font-size: 1.8rem;
+  padding-bottom: 1.5em;
+  line-height: 3.2rem;
+}
+
+.map_one .map_one_left h3 {
+  font-size: 2.5rem;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.6em;
+  color: #f0a500;
+  letter-spacing: 1px;
+}
+
+.map_one .map_one_left h3 span {
+  margin-right: 1em;
+  color: #cf7500;
+}
+
+.map_one .map_one_left .icons {
+  margin-top: 3em;
+}
+
+.map_one .map_one_left .icons a {
+  font-size: 2.5rem;
+  margin: 0 0.5em;
+  color: #f4f4f4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.map_one .map_one_left .icons a:hover {
+  color: #f0a500;
+}
+
+.map_one .map_one_right {
+  width: 50%;
+}
+
+hr {
+  margin: 5em 0;
+}
+
+.map_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5em;
+}
+
+.map_two ion-icon {
+  margin-bottom: -5px;
+}
+
+.map_two .map_one_left {
+  width: 50%;
+  padding-left: 5em;
+}
+
+.map_two .map_one_left h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.8em;
+  color: #f0a500;
+  padding: 0.3em;
+  letter-spacing: 1px;
+}
+
+.map_two .map_one_left h1 span {
+  margin-right: 0.5em;
+  color: #cf7500;
+}
+
+.map_two .map_one_left address {
+  font-size: 1.8rem;
+  padding-bottom: 1.5em;
+  line-height: 3.2rem;
+}
+
+.map_two .map_one_left h3 {
+  font-size: 2.5rem;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 0.6em;
+  color: #f0a500;
+  letter-spacing: 1px;
+}
+
+.map_two .map_one_left h3 span {
+  margin-right: 1em;
+  color: #cf7500;
+}
+
+.map_two .map_one_left .icons {
+  margin-top: 3em;
+}
+
+.map_two .map_one_left .icons a {
+  font-size: 2.5rem;
+  margin: 0 0.5em;
+  color: #f4f4f4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.map_two .map_one_left .icons a:hover {
+  color: #f0a500;
+}
+
+.map_two .map_one_right {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
